@@ -109,12 +109,13 @@ const Hero = () => {
             >
               {t('hero.view_projects')}
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href="/cv.pdf"
+              download="Omer-Ayik-CV.pdf"
               className="px-8 py-4 border-2 border-cyan-500 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1"
             >
               {t('hero.download_cv')}
-            </button>
+            </a>
           </motion.div>
 
           {/* Social Media Icons */}

@@ -63,14 +63,14 @@ const About = () => {
                 </p>
               </div>
 
-              <motion.a
-                href="#"
-                variants={itemVariants}
+              <a
+                href="/cv.pdf"
+                download="Omer-Ayik-CV.pdf"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1"
               >
                 <Download className="w-5 h-5" />
                 {t('about.download_cv')}
-              </motion.a>
+              </a>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-6">
