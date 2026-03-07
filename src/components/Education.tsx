@@ -11,45 +11,45 @@ const Education = () => {
 
   const education = [
     {
-      degree: 'Bachelor of Management Information Systems',
-      school: 'Istanbul Topkapı University',
-      period: '2020 - 2024',
-      gpa: '3.10 / 4.00',
-      description: 'Comprehensive education in information systems management, software development, and business processes.',
+      degree: t('education.edu1_degree'),
+      school: t('education.edu1_school'),
+      period: t('education.edu1_period'),
+      gpa: t('education.edu1_gpa'),
+      description: t('education.edu1_desc'),
       highlights: [
-        'Management Information Systems',
-        'Software Development',
-        'Database Management',
-        'System Analysis & Design',
+        t('education.edu1_high1'),
+        t('education.edu1_high2'),
+        t('education.edu1_high3'),
+        t('education.edu1_high4'),
       ],
     },
     {
-      degree: 'Information Technologies',
-      school: 'Edip İplik Vocational Technical High School',
-      period: '2016 - 2020',
-      gpa: '93.22 / 100',
-      achievement: 'Graduated 1st in School',
-      description: 'Specialized technical education in information technologies with focus on programming and web development.',
+      degree: t('education.edu2_degree'),
+      school: t('education.edu2_school'),
+      period: t('education.edu2_period'),
+      gpa: t('education.edu2_gpa'),
+      achievement: t('education.edu2_achievement'),
+      description: t('education.edu2_desc'),
       highlights: [
-        'Web Development',
-        'Programming Fundamentals',
-        'Network Technologies',
-        'Database Systems',
+        t('education.edu2_high1'),
+        t('education.edu2_high2'),
+        t('education.edu2_high3'),
+        t('education.edu2_high4'),
       ],
     },
   ];
 
   const languages = [
     {
-      language: 'English',
-      level: 'B2 (Upper Intermediate)',
-      institution: 'British Time Language Schools',
-      description: 'Proficient in both written and spoken English. Capable of effective communication in professional environments including technical discussions and customer meetings.',
+      language: t('education.lang1_name'),
+      level: t('education.lang1_level'),
+      institution: t('education.lang1_institution'),
+      description: t('education.lang1_desc'),
     },
     {
-      language: 'Turkish',
-      level: 'Native',
-      description: 'Native speaker with excellent communication skills.',
+      language: t('education.lang2_name'),
+      level: t('education.lang2_level'),
+      description: t('education.lang2_desc'),
     },
   ];
 
@@ -78,15 +78,15 @@ const Education = () => {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               {t('education.title')} & <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('education.languages')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
@@ -107,7 +107,7 @@ const Education = () => {
                   <motion.div
                     key={index}
                     variants={itemVariants}
-                    className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 group"
+                    className="bg-gray-800/50 backdrop-blur-sm p-5 sm:p-8 rounded-2xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 group"
                   >
                     <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6">
                       <div className="flex-1">

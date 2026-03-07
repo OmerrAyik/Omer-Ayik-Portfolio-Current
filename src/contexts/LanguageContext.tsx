@@ -22,28 +22,16 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.education': 'Education',
     'nav.contact': 'Contact',
     'nav.get_in_touch': 'Get in Touch',
-    
+
     // Hero Section
     'hero.greeting': 'Hello, I\'m',
-    'hero.name': 'Ömer Ayık',
-    'hero.title': 'Full Stack Developer',
-    'hero.description': 'Passionate about creating elegant solutions to complex problems. Specializing in modern web technologies and delivering exceptional user experiences.',
+    'hero.description': 'Building modern, high-performance web apps with React & TypeScript. Clean code, pixel-perfect design, seamless experiences.',
     'hero.download_cv': 'Download CV',
     'hero.view_projects': 'View Projects',
-    'hero.scroll_down': 'Scroll Down',
-    'hero.available': 'Available for Opportunities',
-    'hero.years_experience': 'Years Experience',
-    'hero.projects_completed': 'Projects Completed',
-    'hero.technologies': 'Technologies',
-    
+
     // About Section
-    'about.title': 'About Me',
-    'about.description': 'I am a passionate Full Stack Developer with expertise in modern web technologies. I love creating elegant solutions to complex problems and delivering exceptional user experiences.',
-    'about.interests': 'My interests include:',
-    'about.interest1': 'Building scalable web applications',
-    'about.interest2': 'Learning new technologies',
-    'about.interest3': 'Contributing to open source',
-    'about.interest4': 'Solving complex problems',
+    'about.title_prefix': 'About',
+    'about.title_highlight': 'Me',
     'about.download_cv': 'Download CV',
     'about.contact_info': 'Contact Information',
     'about.paragraph1': 'Graduated from Istanbul Topkapı University with a degree in Management Information Systems (GPA: 3.10). As a React and JavaScript-focused Front-End Developer, I have contributed to corporate projects with expertise in component-based architecture.',
@@ -55,26 +43,32 @@ const translations: Record<Language, Record<string, string>> = {
     'about.location_value': 'Istanbul, Bağcılar, Turkey',
     'about.phone_value': '+90 533 199 24 89',
     'about.email_value': 'ayik3456@gmail.com',
-    
+    'about.years_experience': 'Years Experience',
+    'about.projects_completed': 'Projects Completed',
+
     // Skills Section
+    'skills.title_prefix': 'Technical',
     'skills.title': 'Skills',
-    'skills.frontend': 'Frontend',
-    'skills.backend': 'Backend',
-    'skills.tools': 'Tools',
-    'skills.other': 'Other',
     'skills.frontend_frameworks': 'Frontend Frameworks & Libraries',
     'skills.styling_ui': 'Styling & UI',
     'skills.react_ecosystem': 'React Ecosystem',
     'skills.backend_integration': 'Backend & Integration',
     'skills.tools_design': 'Tools & Design',
     'skills.development_practices': 'Development Practices',
-    
+    'skills.core_competencies': 'Core Competencies',
+    'skills.subtitle': 'A comprehensive toolkit of modern technologies and best practices',
+    'skills.comp1': 'Component-Based Architecture',
+    'skills.comp2': 'REST API Integration',
+    'skills.comp3': 'Responsive Web Design',
+    'skills.comp4': 'Performance Optimization',
+    'skills.comp5': 'Agile Development',
+    'skills.comp6': 'Team Collaboration',
+
     // Experience Section
+    'experience.title_prefix': 'Work',
     'experience.title': 'Experience',
-    'experience.current': 'Current',
-    'experience.duration': 'Duration',
-    'experience.responsibilities': 'Responsibilities',
-    
+    'experience.subtitle': 'Professional journey and contributions to impactful projects',
+
     // Experience Content
     'experience.job1_title': 'Front-End Developer',
     'experience.job1_company': 'Avsos.ai / SunExpress Airlines Project',
@@ -85,7 +79,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job1_resp3': 'Managed component state and lifecycle with React Hooks (useState, useEffect)',
     'experience.job1_resp4': 'Developed dynamic and data-driven user interfaces by fetching asynchronous data from REST APIs',
     'experience.job1_resp5': 'Actively participated in sprint planning and code reviews using Agile methodologies',
-    
+
     'experience.job2_title': 'Freelance Web Developer',
     'experience.job2_company': 'Self-Employed',
     'experience.job2_period': 'December 2023 - Present',
@@ -94,7 +88,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job2_resp2': 'Created responsive and aesthetic web projects using HTML, CSS, JavaScript, React, jQuery, and Bootstrap',
     'experience.job2_resp3': 'Analyzed client needs through direct communication and provided customized solutions',
     'experience.job2_resp4': 'Prioritized time management, adherence to delivery deadlines, and customer satisfaction in freelance projects',
-    
+
     'experience.job3_title': 'IT Staff',
     'experience.job3_company': 'Kağıthane Kaymakamlığı (District Governorship)',
     'experience.job3_period': 'July 2024 - August 2024',
@@ -102,7 +96,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job3_resp1': 'Developed applications using Web APIs and participated in integration processes with existing systems',
     'experience.job3_resp2': 'Worked on user interface development in web-based projects',
     'experience.job3_resp3': 'Provided technical support in the IT Department and contributed to resolving user issues',
-    
+
     'experience.job4_title': 'Supervisor',
     'experience.job4_company': '2K İnsan Kaynakları (Human Resources)',
     'experience.job4_period': 'December 2022 - July 2024',
@@ -110,22 +104,11 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job4_resp1': 'Managed team operations and coordinated human resources activities',
     'experience.job4_resp2': 'Oversaw recruitment processes and employee onboarding procedures',
     'experience.job4_resp3': 'Implemented efficiency improvements in HR workflows and documentation',
-    
+
     // Education Section
     'education.title': 'Education',
-    'education.degree': 'Degree',
-    'education.duration': 'Duration',
-    'education.gpa': 'GPA',
-    'education.achievement': 'Achievement',
     'education.languages': 'Languages',
-    'education.level': 'Level',
-    'education.institution': 'Institution',
-    'education.description': 'Description',
-    'education.highlights': 'Highlights',
     'education.academic_background': 'Academic Background',
-    'education.language_proficiency': 'Language Proficiency',
-    
-    // Education Content
     'education.edu1_degree': 'Bachelor of Management Information Systems',
     'education.edu1_school': 'Istanbul Topkapı University',
     'education.edu1_period': '2020 - 2024',
@@ -135,7 +118,6 @@ const translations: Record<Language, Record<string, string>> = {
     'education.edu1_high2': 'Software Development',
     'education.edu1_high3': 'Database Management',
     'education.edu1_high4': 'System Analysis & Design',
-    
     'education.edu2_degree': 'Information Technologies',
     'education.edu2_school': 'Edip İplik Vocational Technical High School',
     'education.edu2_period': '2016 - 2020',
@@ -146,72 +128,54 @@ const translations: Record<Language, Record<string, string>> = {
     'education.edu2_high2': 'Programming Fundamentals',
     'education.edu2_high3': 'Network Technologies',
     'education.edu2_high4': 'Database Systems',
-    
-    // Languages Content
-    'education.lang1_language': 'English',
+    'education.lang1_name': 'English',
     'education.lang1_level': 'B2 (Upper Intermediate)',
     'education.lang1_institution': 'British Time Language Schools',
     'education.lang1_desc': 'Proficient in both written and spoken English. Capable of effective communication in professional environments including technical discussions and customer meetings.',
-    
-    'education.lang2_language': 'Turkish',
+    'education.lang2_name': 'Turkish',
     'education.lang2_level': 'Native',
     'education.lang2_desc': 'Native speaker with excellent communication skills.',
-    
+
     // Certifications Section
     'certifications.title': 'Certifications',
-    'certifications.issuer': 'Issuer',
-    'certifications.date': 'Date',
-    'certifications.level': 'Level',
-    'certifications.institution': 'Institution',
-    'certifications.description': 'Description',
     'certifications.references': 'References',
-    'certifications.position': 'Position',
-    'certifications.email': 'Email',
     'certifications.professional_certifications': 'Professional Certifications',
     'certifications.professional_references': 'Professional References',
-    
-    // Certifications Content
     'certifications.cert1_title': 'English Language Proficiency (B2)',
     'certifications.cert1_level': 'Upper Intermediate',
     'certifications.cert1_institution': 'British Time Language Schools',
     'certifications.cert1_desc': 'Certified proficiency in English communication for professional and technical environments.',
-    
     'certifications.cert2_title': 'Advanced Web Development',
     'certifications.cert2_level': 'Complete Course',
     'certifications.cert2_institution': 'Udemy Platform',
     'certifications.cert2_desc': 'Comprehensive training from beginner to advanced level in modern web development technologies including JavaScript, jQuery, Bootstrap, HTML5, and CSS3.',
-    
     'certifications.cert3_title': 'Website Usability',
     'certifications.cert3_institution': 'BTK Academy Platform',
     'certifications.cert3_desc': 'Specialized training in user experience, accessibility, and website usability best practices.',
-    
     'certifications.cert4_title': 'Website Design Fundamentals',
     'certifications.cert4_institution': 'METU (Middle East Technical University)',
     'certifications.cert4_desc': 'Foundational principles of web design, layout, and visual communication.',
-    
-    // References Content
     'certifications.ref1_name': 'Salih Enver Yurter',
     'certifications.ref1_position': 'Founding Partner at Avsos.ai',
     'certifications.ref1_email': 'enveryurter@gmail.com',
-    
     'certifications.ref2_name': 'Resul Çağdaş',
     'certifications.ref2_position': 'IT Staff at Kağıthane Kaymakamlığı',
     'certifications.ref2_email': 'resulcagdas@gmail.com',
-    
+
     // Projects Section
+    'projects.title_prefix': 'Featured',
     'projects.title': 'Projects',
     'projects.view_project': 'View Project',
-    'projects.github': 'GitHub',
-    'projects.live_demo': 'Live Demo',
-    'projects.technologies': 'Technologies',
     'projects.key_features': 'Key Features',
+    'projects.subtitle': 'Showcase of recent work and personal projects',
+    'projects.view_github': 'View More on GitHub',
     'projects.erikliteknik_title': 'Kombi Servis',
     'projects.erikliteknik_desc': 'Professional heating and cooling services website with service booking system, modern design, and customer-focused functionality for HVAC services.',
     'projects.alparslantekno_title': 'Alparslan Tekno',
     'projects.alparslantekno_desc': 'Cutting-edge technology company website with modern design, showcasing innovative solutions and technology services for digital transformation.',
     'projects.digitalev_title': 'Digital Evin Agency',
     'projects.digitalev_desc': 'Web development agency website showcasing premium website projects, UI/UX design services, and modern web development solutions for brands.',
-    
+
     // Project Features
     'projects.erikliteknik_feature1': 'HVAC service booking system',
     'projects.erikliteknik_feature2': 'Professional service presentation',
@@ -228,20 +192,24 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.digitalev_feature3': 'UI/UX design services',
     'projects.digitalev_feature4': 'Client project examples',
     'projects.digitalev_feature5': 'Modern web development',
-    
+
     // Contact Section
-    'contact.title': 'Get In Touch',
-    'contact.description': 'I\'m always interested in hearing about new projects and opportunities.',
+    'contact.title_prefix': 'Get In',
+    'contact.title_highlight': 'Touch',
+    'contact.subtitle': 'Have a project in mind or want to discuss opportunities? Feel free to reach out!',
+    'contact.info_title': 'Contact Information',
+    'contact.connect_title': 'Connect With Me',
+    'contact.open_title': 'Open to Opportunities',
+    'contact.open_desc': 'Currently available for freelance projects and full-time positions. Let\'s create something amazing together!',
     'contact.email': 'Email',
     'contact.phone': 'Phone',
     'contact.location': 'Location',
     'contact.send_message': 'Send Message',
-    'contact.whatsapp': 'WhatsApp',
-    'contact.name': 'Name',
-    'contact.message': 'Message',
-    'contact.form_success': 'Message sent successfully!',
-    'contact.form_error': 'Error sending message. Please try again.',
-    
+    'contact.form_name': 'Your Name',
+    'contact.form_email': 'Your Email',
+    'contact.form_subject': 'Subject',
+    'contact.form_message': 'Message',
+
     // Footer
     'footer.copyright': '© 2025 Ömer Ayık. All rights reserved.'
   },
@@ -255,28 +223,16 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.education': 'Eğitim',
     'nav.contact': 'İletişim',
     'nav.get_in_touch': 'İletişime Geç',
-    
+
     // Hero Section
     'hero.greeting': 'Merhaba, Ben',
-    'hero.name': 'Ömer Ayık',
-    'hero.title': 'Full Stack Geliştirici',
-    'hero.description': 'Karmaşık problemlere zarif çözümler oluşturmaya tutkunlu. Modern web teknolojilerinde uzmanlaşmış ve olağanüstü kullanıcı deneyimleri sunuyorum.',
+    'hero.description': 'React ve TypeScript ile modern, yüksek performanslı web uygulamaları geliştiriyorum. Temiz kod, kusursuz tasarım, sorunsuz deneyimler.',
     'hero.download_cv': 'CV İndir',
     'hero.view_projects': 'Projeleri Gör',
-    'hero.scroll_down': 'Aşağı Kaydır',
-    'hero.available': 'Fırsatlara Açık',
-    'hero.years_experience': 'Yıllık Deneyim',
-    'hero.projects_completed': 'Tamamlanan Proje',
-    'hero.technologies': 'Teknoloji',
-    
+
     // About Section
-    'about.title': 'Hakkımda',
-    'about.description': 'Modern web teknolojilerinde uzmanlaşmış, tutkulu bir Full Stack Geliştiriciyim. Karmaşık problemlere zarif çözümler oluşturmayı ve olağanüstü kullanıcı deneyimleri sunmayı seviyorum.',
-    'about.interests': 'İlgi alanlarım:',
-    'about.interest1': 'Ölçeklenebilir web uygulamaları geliştirmek',
-    'about.interest2': 'Yeni teknolojiler öğrenmek',
-    'about.interest3': 'Açık kaynaklı projelere katkıda bulunmak',
-    'about.interest4': 'Karmaşık problemleri çözmek',
+    'about.title_prefix': 'Hakkımda',
+    'about.title_highlight': '',
     'about.download_cv': 'CV İndir',
     'about.contact_info': 'İletişim Bilgileri',
     'about.paragraph1': 'İstanbul Topkapı Üniversitesi Yönetim Bilişim Sistemleri bölümünden (GPA: 3.10) mezunuyum. React ve JavaScript odaklı bir Front-End Geliştirici olarak, bileşen tabanlı mimari uzmanlığıyla kurumsal projelere katkıda bulundum.',
@@ -288,26 +244,32 @@ const translations: Record<Language, Record<string, string>> = {
     'about.location_value': 'İstanbul, Bağcılar, Türkiye',
     'about.phone_value': '+90 533 199 24 89',
     'about.email_value': 'ayik3456@gmail.com',
-    
+    'about.years_experience': 'Yıllık Deneyim',
+    'about.projects_completed': 'Tamamlanan Proje',
+
     // Skills Section
+    'skills.title_prefix': 'Teknik',
     'skills.title': 'Yetenekler',
-    'skills.frontend': 'Frontend',
-    'skills.backend': 'Backend',
-    'skills.tools': 'Araçlar',
-    'skills.other': 'Diğer',
     'skills.frontend_frameworks': 'Frontend Frameworks & Kütüphaneler',
     'skills.styling_ui': 'Styling & UI',
     'skills.react_ecosystem': 'React Ekosistemi',
     'skills.backend_integration': 'Backend & Entegrasyon',
     'skills.tools_design': 'Araçlar & Tasarım',
     'skills.development_practices': 'Geliştirme Pratikleri',
-    
+    'skills.core_competencies': 'Temel Yetkinlikler',
+    'skills.subtitle': 'Modern teknolojiler ve en iyi uygulamalardan oluşan kapsamlı bir araç seti',
+    'skills.comp1': 'Bileşen Tabanlı Mimari',
+    'skills.comp2': 'REST API Entegrasyonu',
+    'skills.comp3': 'Duyarlı Web Tasarım',
+    'skills.comp4': 'Performans Optimizasyonu',
+    'skills.comp5': 'Agile Geliştirme',
+    'skills.comp6': 'Takım Çalışması',
+
     // Experience Section
-    'experience.title': 'Deneyim',
-    'experience.current': 'Mevcut',
-    'experience.duration': 'Süre',
-    'experience.responsibilities': 'Sorumluluklar',
-    
+    'experience.title_prefix': 'İş',
+    'experience.title': 'Deneyimi',
+    'experience.subtitle': 'Profesyonel yolculuk ve etkili projelere katkılar',
+
     // Experience Content
     'experience.job1_title': 'Front-End Geliştirici',
     'experience.job1_company': 'Avsos.ai / SunExpress Airlines Projesi',
@@ -318,7 +280,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job1_resp3': 'React Hooks (useState, useEffect) ile bileşen durumunu ve yaşam döngüsünü etkin bir şekilde yönettim',
     'experience.job1_resp4': 'REST API\'lerden asenkron veri çekerek dinamik ve veri odaklı kullanıcı arayüzleri oluşturdum',
     'experience.job1_resp5': 'Agile metodolojilerini kullanarak sprint planlamasına ve kod incelemelerine aktif olarak katıldım',
-    
+
     'experience.job2_title': 'Freelance Web Geliştirici',
     'experience.job2_company': 'Kendi İşim',
     'experience.job2_period': 'Aralık 2023 - Mevcut',
@@ -327,7 +289,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job2_resp2': 'HTML, CSS, JavaScript, React, jQuery ve Bootstrap kullanarak duyarlı ve estetik web projeleri oluşturdum',
     'experience.job2_resp3': 'Doğrudan iletişim yoluyla müşteri ihtiyaçlarını analiz ettim ve özel çözümler sundum',
     'experience.job2_resp4': 'Freelance projelerde zaman yönetimini, teslim tarihlerine uyumu ve müşteri memnuniyetini önceliklendirdim',
-    
+
     'experience.job3_title': 'IT Personeli',
     'experience.job3_company': 'Kağıthane Kaymakamlığı',
     'experience.job3_period': 'Temmuz 2024 - Ağustos 2024',
@@ -335,7 +297,7 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job3_resp1': 'Web API\'leri kullanarak uygulamalar geliştirdim ve mevcut sistemlerle entegrasyon süreçlerine katıldım',
     'experience.job3_resp2': 'Web tabanlı projelerde kullanıcı arayüzü geliştirme üzerinde çalıştım',
     'experience.job3_resp3': 'IT Departmanında teknik destek sağladım ve kullanıcı sorunlarının çözülmesine katkıda bulundum',
-    
+
     'experience.job4_title': 'Supervisor',
     'experience.job4_company': '2K İnsan Kaynakları',
     'experience.job4_period': 'Aralık 2022 - Temmuz 2024',
@@ -343,48 +305,78 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.job4_resp1': 'Ekip operasyonlarını yönettim ve insan kaynakları faaliyetlerini koordine ettim',
     'experience.job4_resp2': 'İşe alım süreçlerini ve çalışan oryantasyon prosedürlerini denetledim',
     'experience.job4_resp3': 'HR iş akışlarında ve dokümantasyonda verimlilik iyileştirmeleri uyguladım',
-    
+
     // Education Section
     'education.title': 'Eğitim',
-    'education.degree': 'Derece',
-    'education.duration': 'Süre',
-    'education.gpa': 'GPA',
-    'education.achievement': 'Başarı',
     'education.languages': 'Diller',
-    'education.level': 'Seviye',
-    'education.institution': 'Kurum',
-    'education.description': 'Açıklama',
-    'education.highlights': 'Öne Çıkanlar',
     'education.academic_background': 'Akademik Geçmiş',
-    'education.language_proficiency': 'Dil Yeterliliği',
-    
+    'education.edu1_degree': 'Yönetim Bilişim Sistemleri Lisans',
+    'education.edu1_school': 'İstanbul Topkapı Üniversitesi',
+    'education.edu1_period': '2020 - 2024',
+    'education.edu1_gpa': '3.10 / 4.00',
+    'education.edu1_desc': 'Bilgi sistemleri yönetimi, yazılım geliştirme ve iş süreçlerinde kapsamlı eğitim.',
+    'education.edu1_high1': 'Yönetim Bilişim Sistemleri',
+    'education.edu1_high2': 'Yazılım Geliştirme',
+    'education.edu1_high3': 'Veritabanı Yönetimi',
+    'education.edu1_high4': 'Sistem Analizi & Tasarımı',
+    'education.edu2_degree': 'Bilişim Teknolojileri',
+    'education.edu2_school': 'Edip İplik Mesleki ve Teknik Anadolu Lisesi',
+    'education.edu2_period': '2016 - 2020',
+    'education.edu2_gpa': '93.22 / 100',
+    'education.edu2_achievement': 'Okul Birincisi Olarak Mezun',
+    'education.edu2_desc': 'Programlama ve web geliştirme odaklı bilişim teknolojilerinde uzmanlaşmış teknik eğitim.',
+    'education.edu2_high1': 'Web Geliştirme',
+    'education.edu2_high2': 'Programlama Temelleri',
+    'education.edu2_high3': 'Ağ Teknolojileri',
+    'education.edu2_high4': 'Veritabanı Sistemleri',
+    'education.lang1_name': 'İngilizce',
+    'education.lang1_level': 'B2 (Üst Orta)',
+    'education.lang1_institution': 'British Time Dil Okulları',
+    'education.lang1_desc': 'Yazılı ve sözlü İngilizce\'de yetkin. Teknik tartışmalar ve müşteri toplantıları dahil profesyonel ortamlarda etkili iletişim kurabilme yeteneği.',
+    'education.lang2_name': 'Türkçe',
+    'education.lang2_level': 'Ana Dil',
+    'education.lang2_desc': 'Mükemmel iletişim becerilerine sahip ana dil konuşmacısı.',
+
     // Certifications Section
     'certifications.title': 'Sertifikalar',
-    'certifications.issuer': 'Veren Kuruluş',
-    'certifications.date': 'Tarih',
-    'certifications.level': 'Seviye',
-    'certifications.institution': 'Kurum',
-    'certifications.description': 'Açıklama',
     'certifications.references': 'Referanslar',
-    'certifications.position': 'Pozisyon',
-    'certifications.email': 'E-posta',
     'certifications.professional_certifications': 'Profesyonel Sertifikalar',
     'certifications.professional_references': 'Profesyonel Referanslar',
-    
+    'certifications.cert1_title': 'İngilizce Dil Yeterliliği (B2)',
+    'certifications.cert1_level': 'Üst Orta Düzey',
+    'certifications.cert1_institution': 'British Time Dil Okulları',
+    'certifications.cert1_desc': 'Profesyonel ve teknik ortamlar için İngilizce iletişim yeterliliği sertifikası.',
+    'certifications.cert2_title': 'İleri Seviye Web Geliştirme',
+    'certifications.cert2_level': 'Tam Kurs',
+    'certifications.cert2_institution': 'Udemy Platformu',
+    'certifications.cert2_desc': 'JavaScript, jQuery, Bootstrap, HTML5 ve CSS3 dahil modern web geliştirme teknolojilerinde başlangıçtan ileri seviyeye kapsamlı eğitim.',
+    'certifications.cert3_title': 'Web Sitesi Kullanılabilirliği',
+    'certifications.cert3_institution': 'BTK Akademi Platformu',
+    'certifications.cert3_desc': 'Kullanıcı deneyimi, erişilebilirlik ve web sitesi kullanılabilirliği en iyi uygulamalarında uzmanlaşmış eğitim.',
+    'certifications.cert4_title': 'Web Sitesi Tasarım Temelleri',
+    'certifications.cert4_institution': 'ODTÜ (Orta Doğu Teknik Üniversitesi)',
+    'certifications.cert4_desc': 'Web tasarımının temel ilkeleri, düzen ve görsel iletişim.',
+    'certifications.ref1_name': 'Salih Enver Yurter',
+    'certifications.ref1_position': 'Avsos.ai Kurucu Ortak',
+    'certifications.ref1_email': 'enveryurter@gmail.com',
+    'certifications.ref2_name': 'Resul Çağdaş',
+    'certifications.ref2_position': 'Kağıthane Kaymakamlığı IT Personeli',
+    'certifications.ref2_email': 'resulcagdas@gmail.com',
+
     // Projects Section
+    'projects.title_prefix': 'Öne Çıkan',
     'projects.title': 'Projeler',
     'projects.view_project': 'Projeyi Gör',
-    'projects.github': 'GitHub',
-    'projects.live_demo': 'Canlı Demo',
-    'projects.technologies': 'Teknolojiler',
     'projects.key_features': 'Öne Çıkan Özellikler',
+    'projects.subtitle': 'Son çalışmalar ve kişisel projelerin vitrini',
+    'projects.view_github': 'GitHub\'da Daha Fazla Gör',
     'projects.erikliteknik_title': 'Kombi Servis',
     'projects.erikliteknik_desc': 'Profesyonel ısıtma ve soğutma hizmetleri web sitesi, servis rezervasyon sistemi, modern tasarım ve müşteri odaklı fonksiyonellik ile HVAC hizmetleri.',
     'projects.alparslantekno_title': 'Alparslan Tekno',
     'projects.alparslantekno_desc': 'Modern tasarımlı, yenilikçi çözümler ve teknoloji hizmetlerini sergileyen, dijital dönüşüm için öncü teknoloji şirketi web sitesi.',
     'projects.digitalev_title': 'Digital Evin Ajansı',
     'projects.digitalev_desc': 'Premium web site projelerini, UI/UX tasarım hizmetlerini ve markalar için modern web geliştirme çözümlerini sergileyen web geliştirme ajansı sitesi.',
-    
+
     // Project Features
     'projects.erikliteknik_feature1': 'HVAC servis rezervasyon sistemi',
     'projects.erikliteknik_feature2': 'Profesyonel hizmet sunumu',
@@ -401,20 +393,24 @@ const translations: Record<Language, Record<string, string>> = {
     'projects.digitalev_feature3': 'UI/UX tasarım hizmetleri',
     'projects.digitalev_feature4': 'Müşteri proje örnekleri',
     'projects.digitalev_feature5': 'Modern web geliştirme',
-    
+
     // Contact Section
-    'contact.title': 'İletişime Geç',
-    'contact.description': 'Yeni projeler ve fırsatlar hakkında duymak her zaman ilgimi çekiyor.',
+    'contact.title_prefix': 'İletişime',
+    'contact.title_highlight': 'Geç',
+    'contact.subtitle': 'Aklınızda bir proje mi var veya fırsatları görüşmek mi istiyorsunuz? İletişime geçin!',
+    'contact.info_title': 'İletişim Bilgileri',
+    'contact.connect_title': 'Benimle Bağlantı Kur',
+    'contact.open_title': 'Fırsatlara Açık',
+    'contact.open_desc': 'Şu anda freelance projeler ve tam zamanlı pozisyonlar için müsaitim. Birlikte harika bir şey yaratalım!',
     'contact.email': 'E-posta',
     'contact.phone': 'Telefon',
     'contact.location': 'Konum',
     'contact.send_message': 'Mesaj Gönder',
-    'contact.whatsapp': 'WhatsApp',
-    'contact.name': 'Ad',
-    'contact.message': 'Mesaj',
-    'contact.form_success': 'Mesaj başarıyla gönderildi!',
-    'contact.form_error': 'Mesaj gönderilirken hata oluştu. Lütfen tekrar deneyin.',
-    
+    'contact.form_name': 'Adınız',
+    'contact.form_email': 'E-posta Adresiniz',
+    'contact.form_subject': 'Konu',
+    'contact.form_message': 'Mesajınız',
+
     // Footer
     'footer.copyright': '© 2025 Ömer Ayık. Tüm hakları saklıdır.'
   }

@@ -11,43 +11,43 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: 'English Language Proficiency (B2)',
-      level: 'Upper Intermediate',
-      institution: 'British Time Language Schools',
-      description: 'Certified proficiency in English communication for professional and technical environments.',
+      title: t('certifications.cert1_title'),
+      level: t('certifications.cert1_level'),
+      institution: t('certifications.cert1_institution'),
+      description: t('certifications.cert1_desc'),
       color: 'from-cyan-500 to-blue-500',
     },
     {
-      title: 'Advanced Web Development',
-      level: 'Complete Course',
-      institution: 'Udemy Platform',
-      description: 'Comprehensive training from beginner to advanced level in modern web development technologies including JavaScript, jQuery, Bootstrap, HTML5, and CSS3.',
+      title: t('certifications.cert2_title'),
+      level: t('certifications.cert2_level'),
+      institution: t('certifications.cert2_institution'),
+      description: t('certifications.cert2_desc'),
       color: 'from-blue-500 to-indigo-500',
     },
     {
-      title: 'Website Usability',
-      institution: 'BTK Academy Platform',
-      description: 'Specialized training in user experience, accessibility, and website usability best practices.',
+      title: t('certifications.cert3_title'),
+      institution: t('certifications.cert3_institution'),
+      description: t('certifications.cert3_desc'),
       color: 'from-cyan-400 to-teal-500',
     },
     {
-      title: 'Website Design Fundamentals',
-      institution: 'METU (Middle East Technical University)',
-      description: 'Foundational principles of web design, layout, and visual communication.',
+      title: t('certifications.cert4_title'),
+      institution: t('certifications.cert4_institution'),
+      description: t('certifications.cert4_desc'),
       color: 'from-teal-500 to-cyan-500',
     },
   ];
 
   const references = [
     {
-      name: 'Salih Enver Yurter',
-      position: 'Founding Partner at Avsos.ai',
-      email: 'enveryurter@gmail.com',
+      name: t('certifications.ref1_name'),
+      position: t('certifications.ref1_position'),
+      email: t('certifications.ref1_email'),
     },
     {
-      name: 'Resul Çağdaş',
-      position: 'IT Staff at Kağıthane Kaymakamlığı',
-      email: 'resulcagdas@gmail.com',
+      name: t('certifications.ref2_name'),
+      position: t('certifications.ref2_position'),
+      email: t('certifications.ref2_email'),
     },
   ];
 
@@ -76,15 +76,15 @@ const Certifications = () => {
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               {t('certifications.title')} & <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('certifications.references')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>

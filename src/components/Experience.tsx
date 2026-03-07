@@ -84,26 +84,26 @@ const Experience = () => {
         <div className="absolute top-1/2 right-0 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Work <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('experience.title')}</span>
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              {t('experience.title_prefix')} <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('experience.title')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Professional journey and contributions to impactful projects
+              {t('experience.subtitle')}
             </p>
           </motion.div>
 
           <div className="max-w-5xl mx-auto">
             <div className="relative">
-              <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-blue-500 to-transparent transform -translate-x-1/2"></div>
+              <div className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-blue-500 to-transparent sm:transform sm:-translate-x-1/2"></div>
 
               {experiences.map((exp, index) => (
                 <motion.div
@@ -112,16 +112,16 @@ const Experience = () => {
                   className={`relative mb-16 ${index % 2 === 0 ? 'md:pr-1/2' : 'md:pl-1/2'
                     }`}
                 >
-                  <div className="absolute left-1/2 top-6 w-4 h-4 bg-cyan-500 rounded-full border-4 border-gray-900 transform -translate-x-1/2 z-10 shadow-lg shadow-cyan-500/50"></div>
+                  <div className="absolute left-4 sm:left-1/2 top-6 w-4 h-4 bg-cyan-500 rounded-full border-4 border-gray-900 sm:transform sm:-translate-x-1/2 z-10 shadow-lg shadow-cyan-500/50 -translate-x-1/2"></div>
 
-                  <div className={`ml-16 md:ml-0 ${index % 2 === 0 ? 'md:mr-16' : 'md:ml-16'}`}>
-                    <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 group">
+                  <div className={`ml-10 sm:ml-16 md:ml-0 ${index % 2 === 0 ? 'md:mr-16' : 'md:ml-16'}`}>
+                    <div className="bg-gray-800/50 backdrop-blur-sm p-5 sm:p-8 rounded-2xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 group">
                       <div className="flex items-center gap-3 text-cyan-400 mb-4">
                         <Calendar className="w-5 h-5" />
                         <span className="text-base font-semibold">{exp.period}</span>
                       </div>
 
-                      <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4 group-hover:text-cyan-400 transition-colors">
                         {exp.title}
                       </h3>
 

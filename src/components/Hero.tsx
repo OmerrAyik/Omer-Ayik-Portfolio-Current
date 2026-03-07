@@ -46,21 +46,21 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 max-w-6xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 z-10 pt-20 lg:pt-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 lg:gap-16 max-w-6xl mx-auto">
 
           {/* Left Side - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex-1 text-center lg:text-left"
+            className="flex-1 text-center lg:text-left order-2 lg:order-1"
           >
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-cyan-400 text-lg md:text-xl mb-4 font-light tracking-wider"
+              className="text-cyan-400 text-base sm:text-lg md:text-xl mb-2 sm:mb-4 font-light tracking-wider"
             >
               {t('hero.greeting')}
             </motion.p>
@@ -69,7 +69,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-transparent"
+              className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-3 sm:mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-transparent"
             >
               ÖMER AYIK
             </motion.h1>
@@ -78,7 +78,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-8 h-12 flex items-center justify-center lg:justify-start"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-4 sm:mb-8 h-10 sm:h-12 flex items-center justify-center lg:justify-start"
             >
               <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent font-semibold">
                 {typedText}
@@ -98,7 +98,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
-              className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed"
+              className="text-gray-400 text-sm sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-10 leading-relaxed"
             >
               {t('hero.description')}
             </motion.p>
@@ -107,18 +107,18 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center mb-6 sm:mb-8"
             >
               <button
                 onClick={() => scrollToSection('projects')}
-                className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg font-semibold hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base"
               >
                 {t('hero.view_projects')}
               </button>
               <a
                 href="/cv.pdf"
                 download="Omer-Ayik-CV.pdf"
-                className="px-8 py-4 border-2 border-cyan-500 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-cyan-500 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base text-center"
               >
                 {t('hero.download_cv')}
               </a>
@@ -159,7 +159,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 50, scale: 0.8 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="flex-shrink-0 relative"
+            className="flex-shrink-0 relative order-1 lg:order-2"
           >
             {/* Outer glow ring */}
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-full opacity-20 blur-xl animate-pulse"></div>
@@ -176,7 +176,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl shadow-cyan-500/20"
+              className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl shadow-cyan-500/20"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-950 rounded-full"></div>
               <img

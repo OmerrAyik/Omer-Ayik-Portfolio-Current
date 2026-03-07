@@ -66,29 +66,29 @@ const Skills = () => {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Technical <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('skills.title')}</span>
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              {t('skills.title_prefix')} <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('skills.title')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              A comprehensive toolkit of modern technologies and best practices
+              {t('skills.subtitle')}
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={categoryIndex}
                 variants={itemVariants}
-                className="bg-gray-900/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition-all duration-300 group"
+                className="bg-gray-900/50 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-gray-800 hover:border-cyan-500/50 transition-all duration-300 group"
               >
                 <h3 className={`text-xl font-bold mb-6 bg-gradient-to-r ${category.color} bg-clip-text text-transparent`}>
                   {category.title}
@@ -114,31 +114,31 @@ const Skills = () => {
             variants={itemVariants}
             className="mt-16 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-8 max-w-4xl mx-auto"
           >
-            <h3 className="text-2xl font-bold mb-4 text-center">Core Competencies</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center">{t('skills.core_competencies')}</h3>
             <div className="grid md:grid-cols-2 gap-4 text-gray-300">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>Component-Based Architecture</span>
+                <span>{t('skills.comp1')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>REST API Integration</span>
+                <span>{t('skills.comp2')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>Responsive Web Design</span>
+                <span>{t('skills.comp3')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>Performance Optimization</span>
+                <span>{t('skills.comp4')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>Agile Development</span>
+                <span>{t('skills.comp5')}</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-                <span>Team Collaboration</span>
+                <span>{t('skills.comp6')}</span>
               </div>
             </div>
           </motion.div>

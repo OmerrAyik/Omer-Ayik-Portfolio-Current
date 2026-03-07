@@ -144,20 +144,20 @@ const Projects = () => {
         <div className="absolute top-0 left-1/2 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('projects.title')}</span>
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+              {t('projects.title_prefix')} <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('projects.title')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Showcase of recent work and personal projects
+              {t('projects.subtitle')}
             </p>
           </motion.div>
 
@@ -170,8 +170,8 @@ const Projects = () => {
               >
                 <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
 
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-4 group-hover:text-cyan-400 transition-colors">
                     {project.title.includes('Agency') || project.title.includes('Ajansı') ? (
                       <>
                         Digital Evin <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -183,7 +183,7 @@ const Projects = () => {
                     )}
                   </h3>
 
-                  <p className="text-base text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-400 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -203,7 +203,7 @@ const Projects = () => {
                     {project.technologies.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg text-sm font-medium"
+                        className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-800 text-gray-300 rounded-lg text-xs sm:text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -239,7 +239,7 @@ const Projects = () => {
               className="inline-flex items-center gap-2 px-6 py-3 border-2 border-cyan-500 text-cyan-400 rounded-lg font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:-translate-y-1"
             >
               <Github className="w-5 h-5" />
-              View More on GitHub
+              {t('projects.view_github')}
             </a>
           </motion.div>
         </motion.div>

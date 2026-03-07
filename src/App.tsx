@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone, MapPin, Download, ExternalLink, ChevronDown } from 'lucide-react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Hero from './components/Hero';
 import About from './components/About';

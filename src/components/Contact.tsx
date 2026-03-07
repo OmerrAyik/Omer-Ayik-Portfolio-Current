@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Send, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 // WhatsApp SVG Icon Component
@@ -98,27 +98,27 @@ const Contact = () => {
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Get In <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Touch</span>
+          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+              {t('contact.title_prefix')} <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">{t('contact.title_highlight')}</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto rounded-full"></div>
             <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-              Have a project in mind or want to discuss opportunities? Feel free to reach out!
+              {t('contact.subtitle')}
             </p>
           </motion.div>
 
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 sm:gap-12">
             <motion.div variants={itemVariants} className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">{t('contact.info_title')}</h3>
 
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => (
@@ -148,7 +148,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Connect With Me</h3>
+                <h3 className="text-2xl font-bold text-white mb-6">{t('contact.connect_title')}</h3>
 
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => (
@@ -168,9 +168,9 @@ const Contact = () => {
               </div>
 
               <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-2xl p-6">
-                <h4 className="text-lg font-bold text-white mb-2">Open to Opportunities</h4>
+                <h4 className="text-lg font-bold text-white mb-2">{t('contact.open_title')}</h4>
                 <p className="text-gray-300 text-sm">
-                  Currently available for freelance projects and full-time positions. Let's create something amazing together!
+                  {t('contact.open_desc')}
                 </p>
               </div>
             </motion.div>
@@ -179,7 +179,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                    Your Name
+                    {t('contact.form_name')}
                   </label>
                   <input
                     type="text"
@@ -195,7 +195,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                    Your Email
+                    {t('contact.form_email')}
                   </label>
                   <input
                     type="email"
@@ -211,7 +211,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                    Subject
+                    {t('contact.form_subject')}
                   </label>
                   <input
                     type="text"
@@ -227,7 +227,7 @@ const Contact = () => {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                    Message
+                    {t('contact.form_message')}
                   </label>
                   <textarea
                     id="message"
