@@ -120,7 +120,7 @@ const About = () => {
                   <div className="text-gray-400">Years Experience</div>
                 </div>
                 <div className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 text-center hover:border-cyan-500/50 transition-all duration-300">
-                  <div className="text-3xl font-bold text-cyan-400 mb-2">10+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-2">30+</div>
                   <div className="text-gray-400">Projects Completed</div>
                 </div>
               </div>
